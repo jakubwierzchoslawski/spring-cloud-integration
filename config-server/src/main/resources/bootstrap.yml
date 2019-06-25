@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/cloud-config-repo
+        git:
+          uri: https://github.com/jakubwierzchoslawski/cloud-config-repo
+          username: jakubwierzchoslawski
+          password: abc12345
+  security:
+    user:
+      name: root
+      password: secret
+  profiles:
+    active: native
+          
+server:
+  port: 8888
+  
