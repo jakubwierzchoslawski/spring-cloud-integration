@@ -66,6 +66,8 @@
 	<modules>
 		<module>config-server</module>
 		<module>registry-server</module>
+		<module>gateway-server</module>
+		<module>image-service</module>
 	</modules>
 
 </project>
